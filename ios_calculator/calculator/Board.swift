@@ -30,7 +30,14 @@ class Board: UIView {
         for index in 0..<20{
             let btn = FuncButton()
             self.addSubview(btn)
-            
+            btn.snp.makeConstraints({(maker) in
+                if index%4 == 0{
+                    maker.left.equalTo(0)
+                }else{
+                    maker.left.equalTo(frontBtn.snp.right)
+                }
+            })
+            frontBtn = btn
         }
     }
 }
