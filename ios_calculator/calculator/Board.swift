@@ -26,6 +26,11 @@ class Board: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     func installUI(){
-        
+        var frontBtn:FuncButton!
+        for index in 0..<20{
+            let btn = FuncButton()
+            self.addSubview(btn)
+            
+        }
     }
 }
