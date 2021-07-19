@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010CEC1326A56A98000E2398 /* CalculatorEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010CEC1226A56A98000E2398 /* CalculatorEngine.swift */; };
 		01FB237726A2DD37007F3DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FB237626A2DD37007F3DAA /* AppDelegate.swift */; };
 		01FB237926A2DD37007F3DAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FB237826A2DD37007F3DAA /* SceneDelegate.swift */; };
 		01FB237B26A2DD37007F3DAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FB237A26A2DD37007F3DAA /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010CEC1226A56A98000E2398 /* CalculatorEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorEngine.swift; sourceTree = "<group>"; };
 		01FB237326A2DD37007F3DAA /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FB237626A2DD37007F3DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01FB237826A2DD37007F3DAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				01FB238426A2DD38007F3DAA /* Info.plist */,
 				01FB23A626A2DD74007F3DAA /* FuncButton.swift */,
 				01FB23A826A2DEA2007F3DAA /* Board.swift */,
+				010CEC1226A56A98000E2398 /* CalculatorEngine.swift */,
 			);
 			path = calculator;
 			sourceTree = "<group>";
@@ -161,7 +164,6 @@
 				E2B41167555A2A4C9F98F848 /* Pods-calculatorTests.debug.xcconfig */,
 				711F217F41D823AEC7E384AF /* Pods-calculatorTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -418,6 +420,7 @@
 				01FB23A926A2DEA2007F3DAA /* Board.swift in Sources */,
 				01FB237926A2DD37007F3DAA /* SceneDelegate.swift in Sources */,
 				01FB23A726A2DD74007F3DAA /* FuncButton.swift in Sources */,
+				010CEC1326A56A98000E2398 /* CalculatorEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

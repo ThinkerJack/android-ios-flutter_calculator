@@ -7,18 +7,45 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,BoardButtonInputDelegate {
     let board = Board()
+    let screen = Screen()
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.view.addSubview(board)
+        installUI()
+    }
+    func boardButtonClick(content: String) {
+        if(content == "ac"){
+            screen.clearContent()
+        }
+        if(content == "del"){
+            screen.deleteInput()
+        }
+        if content == "="{
+            screen.refreshHistory()
+        }else{
+            screen.inputContent(content: content)
+        }
+        
+    }
+    func installUI(){
+        self.view.addSubview(board)
+        self.view.addSubview(screen)
+        board.delegate = self
         board.snp.makeConstraints{
             (maker) in
-            maker.top.equalTo(100)
-            maker.height.equalTo(super.view!.snp.height).multipliedBy(0.7)
-            maker.width.equalTo(super.view!.snp.width)
-
-    }
+            maker.height.equalTo(super.view!.snp.height).multipliedBy(2/3.0)
+            maker.right.equalTo(0)
+            maker.left.equalTo(0)
+            maker.bottom.equalTo(0)
+        }
+        screen.snp.makeConstraints{
+            (maker) in
+            maker.top.equalTo(20)
+            maker.right.equalTo(0)
+            maker.left.equalTo(0)
+            maker.bottom.equalTo(board.snp.top)
+        }
     }
 
 

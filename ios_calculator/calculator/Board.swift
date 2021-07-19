@@ -7,7 +7,9 @@
 
 import UIKit
 import SnapKit
-
+protocol BoardButtonInputDelegate {
+    func  boardButtonClick(content:String)
+}
 class Board: UIView {
 
     /*
@@ -18,6 +20,8 @@ class Board: UIView {
     }
     */
     var dataArray = ["0",".","%","=","1","2","3","+","4","5","6","-","7","8","9","*","ac","del","^","/"]
+    
+    var delegate:BoardButtonInputDelegate?
     override init(frame: CGRect) {
         super.init(frame: frame)
         installUI()
@@ -25,7 +29,6 @@ class Board: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         installUI()
-
     }
     func installUI(){
         var frontBtn:FuncButton!
@@ -57,7 +60,9 @@ class Board: UIView {
         }
     }
     @objc func btnClick(button:FuncButton)  {
-        print(button.title(for: .normal))
+        if delegate != nil{
+            delegate?.boardButtonClick(content: button.currentTitle!)
+        }
     }
 }
 class Screen:UIView{
@@ -66,8 +71,84 @@ class Screen:UIView{
     var inputString=""
     var historyString=""
     let figureArray:Array<Character>  = ["0","1","2","3","4","5","6","7","8","9","."]
+    let funcArray = ["+","-","*","/","%","^"]
     
-
-
+   
+    init(){
+        inputLabel = UILabel()
+        historyLabel = UILabel()
+        super.init(frame: CGRect.zero)
+        installUI()
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        installUI()
+    }
+    func installUI(){
+        inputLabel?.textAlignment = .right
+        historyLabel?.textAlignment = .right
+        inputLabel?.font = UIFont.systemFont(ofSize: 34)
+        historyLabel?.font = UIFont.systemFont(ofSize: 30)
+        inputLabel?.textColor = UIColor.orange
+        historyLabel?.textColor = UIColor.black
+        inputLabel?.adjustsFontSizeToFitWidth = true
+        inputLabel?.minimumScaleFactor = 0.5
+        historyLabel?.adjustsFontSizeToFitWidth = true
+        historyLabel?.minimumScaleFactor = 0.5
+        inputLabel?.lineBreakMode = .byTruncatingHead
+        historyLabel?.lineBreakMode = .byTruncatingHead
+        inputLabel?.numberOfLines = 0
+        historyLabel?.numberOfLines = 0
+        self.addSubview(inputLabel!)
+        self.addSubview(historyLabel!)
+        inputLabel?.snp.makeConstraints({(maker) in
+            maker.left.equalTo(10)
+            maker.right.equalTo(-10)
+            maker.bottom.equalTo(-10)
+            maker.height.equalTo(inputLabel!.superview!.snp.height).multipliedBy(0.5).offset(-10)
+        })
+        historyLabel?.snp.makeConstraints({(maker) in
+            maker.left.equalTo(10)
+            maker.right.equalTo(-10)
+            maker.bottom.equalTo(inputLabel!.snp.top)
+            maker.height.equalTo(historyLabel!.superview!.snp.height).multipliedBy(0.5).offset(-10)
+        })
+    }
+    func inputContent(content:String){
+        if !figureArray.contains(content.last!) && !funcArray.contains(content){
+            return
+        }
+        if inputString.count > 0{
+            if figureArray.contains(inputString.last!){
+                inputString.append(content)
+                inputLabel?.text = inputString
+            }else{
+                if figureArray.contains(content.last!){
+                    inputString.append(content)
+                    inputLabel?.text = inputString
+                }
+            }
+        }else{
+            if figureArray.contains(content.last!){
+                inputString.append(content)
+                inputLabel?.text = inputString
+            }
+        }
+    }
+    
+    func refreshHistory(){
+        historyString = inputString
+        historyLabel?.text = historyString
+    }
+    func clearContent(){
+        inputString = ""
+        inputLabel?.text = inputString
+    }
+    func deleteInput(){
+        if inputString.count > 0 {
+            inputString.remove(at: inputString.index(before: inputString.endIndex))
+            inputLabel?.text = inputString
+        }
+    }
 
 }
