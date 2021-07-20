@@ -10,20 +10,34 @@ import UIKit
 class ViewController: UIViewController,BoardButtonInputDelegate {
     let board = Board()
     let screen = Screen()
+    let calculator = CalculatorEngine()
+    var isNew = false
     override func viewDidLoad() {
         super.viewDidLoad()
         installUI()
     }
     func boardButtonClick(content: String) {
-        if(content == "ac"){
-            screen.clearContent()
-        }
-        if(content == "del"){
-            screen.deleteInput()
-        }
-        if content == "="{
-            screen.refreshHistory()
+        if content == "ac" || content == "del" || content == "="{
+            if(content == "ac"){
+                screen.clearContent()
+                screen.refreshHistory()
+            }
+            if(content == "del"){
+                screen.deleteInput()
+            }
+            if content == "="{
+                let result = calculator.calculatEquation(equation: screen.inputString)
+                screen.refreshHistory()
+                screen.clearContent()
+                screen.inputContent(content: String(result))
+                isNew = true
+            }
+    
         }else{
+            if isNew{
+                screen.clearContent()
+                isNew = false
+            }
             screen.inputContent(content: content)
         }
         
