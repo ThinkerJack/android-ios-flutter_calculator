@@ -24,9 +24,21 @@ UI框架：UIKit
 ## 4.技术准备
 
 - [Swift基础语法](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html)
+
 - [UIKit使用](https://developer.apple.com/documentation/uikit/)
+
 - [SnapKit使用](http://snapkit.io/docs/)
+
 - [CocoaPods使用](https://cocoapods.org/)
+
+  ```
+  sudo gem install cocoapods
+  pod init
+  pod install
+  ```
+
+  M1 mac安装有[问题](https://github.com/CocoaPods/CocoaPods/issues/10723)
+
 - [Swift中的协议](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)
 
 ## 5.学习感受
