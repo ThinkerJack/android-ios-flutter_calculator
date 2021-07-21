@@ -130,8 +130,8 @@
 				01FB238126A2DD38007F3DAA /* LaunchScreen.storyboard */,
 				01FB238426A2DD38007F3DAA /* Info.plist */,
 				01FB23A626A2DD74007F3DAA /* FuncButton.swift */,
-				01FB23A826A2DEA2007F3DAA /* Board.swift */,
 				010CEC1226A56A98000E2398 /* CalculatorEngine.swift */,
+				01FB23A826A2DEA2007F3DAA /* Board.swift */,
 			);
 			path = calculator;
 			sourceTree = "<group>";
