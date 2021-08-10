@@ -1,16 +1,37 @@
 # flutter_calculator
 
-A new Flutter project.
+## 1.项目简介
 
-## Getting Started
+使用dart编写的Flutter APP，实现了计算器的常见功能。
 
-This project is a starting point for a Flutter application.
+## 2.环境简介
 
-A few resources to get you started if this is your first Flutter project:
+语言：Dart 2.14
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+框架版本：Flutter stable, 2.0.6
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 3.项目截图
+
+<img src="https://img-blog.csdnimg.cn/a018be470fdd4144ab85897ccfb0bc4c.png" style="zoom: 67%;" />
+
+## 4.开发流程与代码逻辑简述
+
+- Gridview和Expanded实现布局
+
+## 5.技术准备
+
+- Dart语法
+- FLutter基础
+
+## 6.总结
+
+编程其实是一种思想的表达手段，某一天我突发奇想，想做一个什么样的APP，基于这个想法就有了客户端的页面，也是基于这个想法有了后端的业务。编程只不过是实现这个想法的工具，编程和程序员，就像文字和作家，画笔和画家之间的关系，重要的不是实现想法的手段，重要的是心，一个充满了想法的心灵才是最宝贵的。作家什么都不想写，文字对他有什么用呢，画家什么都不想画，画笔又有什么用呢，这样才能准确的理解编程的作用，如果没有一个改变世界的想法，google搜索和苹果手机也都不会出现了，拉里佩奇或乔布斯代码写的多好都没用。由此可见，互联网行业大部分的行业都是为了想法在服务，不管是产品，运营，UI，都是为了让想法变成现实，什么时候自己能成为不再为别人的想法服务的人，而是提出想法呢？有点跑题了。
+
+android/iOS/flutter 三种技术写同一种APP本意是为了熟悉一下近来学习的android和iOS，flutter算是添头，写一下玩一玩。不过通过这次项目的编写，让我觉得其实很多的技术都是在做类似的事情，变化的只不过是API。用Icon，用RN，用FLutter，用Android，用IOS都可以写出APP来，成为大前端，也就是掌握多种可以做同一个事情的技术，会一种和会多种只不过是谁记住了更多的API。
+
+最近在做一个移动端即时通讯的需求，读了一些技术博客，这些博客不是为了Flutter而写，他讲述的是客户端和服务器端整个的处理即时通讯的流程，客户端开启连接，心跳检测，创建本地数据库，服务端接收到消息再转发到客户端，等等。这让我觉得在业务开发上重要的其实不是语言或者技术，而是这种整体的，解决问题的思路，思路才是灵魂，语言和框架只不过是实现这种思路的工具。
+
+工作已经两年了，感觉自己就是个API boy，掌握了很多的API，前端，客户端，服务端都写过，学过的语言都有七种了，以至于现在不是工作用到的技术，很多细节都想不起来了。可是这些API有多少是可以迁移的呢，过了几年有了新的语言，新的框架，所谓的编程经验也跟着清零。基于这种考虑，让我想到去学习计算机基础，学一学经久不衰的计算机科学，不能满足于学习API。从技术投资的角度来讲，肯定是希望自己学习的技术永远不过时，现在来看只有计算机科学有这样的特性，准备学一学试一试。当我认识到我可能会从事十几年的计算机行业后，我觉得不能再为了面试而学习了，应该学一些真正的可以贯穿整个职业生涯的知识。
+
+
+
