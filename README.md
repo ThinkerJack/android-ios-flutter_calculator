@@ -1,3 +1,7 @@
+![](https://img-blog.csdnimg.cn/5cf1ef2c34a84df6a8520f996dc6b138.png)
+
+前端时间使用Flutter，iOS，Android三种技术编写了三个相同功能的计算器APP，[github地址](https://github.com/ThinkerJack/android-ios-flutter_calculator)。
+
 # ios_calculator
 
 ## 1.项目简介
@@ -87,8 +91,6 @@ UI框架：UIKit
 写之前看了一下其他的开源项目，参考了一下布局，学习了[`constraintlayout`布局](https://developer.android.com/reference/androidx/constraintlayout/widget/ConstraintLayout)，其实本来想用jetpack试一下，不过自己kotlin还没学，而且学到太多也有点记不住，就放弃了。
 
 可能需要歇一歇再继续。
-
-
 
 # flutter_calculator
 
