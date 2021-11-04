@@ -1,6 +1,6 @@
-![](https://img-blog.csdnimg.cn/5cf1ef2c34a84df6a8520f996dc6b138.png)
+![](https://img-blog.csdnimg.cn/202110141506310.png)
 
-前端时间使用Flutter，iOS，Android三种技术编写了三个相同功能的计算器APP，[github地址](https://github.com/ThinkerJack/android-ios-flutter_calculator)。
+前端时间使用Flutter，iOS，Android三种技术编写了三个相同功能的计算器APP，[github地址](https://github.com/ThinkerJack/android-ios-flutter_calculator)，https://github.com/ThinkerJack/android-ios-flutter_notepad。
 
 # ios_calculator
 
@@ -20,7 +20,7 @@ UI框架：UIKit
 
 ## 3.项目截图
 
-<img src="https://img-blog.csdnimg.cn/img_convert/d9cf4a90e8f9e659fa7cf93ea5e01626.png" style="zoom: 50%;" />
+![](https://img-blog.csdnimg.cn/img_convert/d9cf4a90e8f9e659fa7cf93ea5e01626.png)
 
 ## 4.开发流程与代码逻辑简述
 
@@ -70,7 +70,7 @@ UI框架：UIKit
 
 ## 3.项目截图
 
-<img src="https://img-blog.csdnimg.cn/030dc2799f8b4d9cb0bc7d985ddc01bd.png" style="zoom: 67%;" />
+![](https://img-blog.csdnimg.cn/030dc2799f8b4d9cb0bc7d985ddc01bd.png)
 
 ## 4.开发流程与代码逻辑简述
 
@@ -106,7 +106,7 @@ UI框架：UIKit
 
 ## 3.项目截图
 
-<img src="https://img-blog.csdnimg.cn/a018be470fdd4144ab85897ccfb0bc4c.png" style="zoom: 67%;" />
+![](https://img-blog.csdnimg.cn/a018be470fdd4144ab85897ccfb0bc4c.png)
 
 ## 4.开发流程与代码逻辑简述
 
@@ -121,7 +121,7 @@ UI框架：UIKit
 
 编程其实是一种思想的表达手段，某一天我突发奇想，想做一个什么样的APP，基于这个想法就有了客户端的页面，也是基于这个想法有了后端的业务。编程只不过是实现这个想法的工具，编程和程序员，就像文字和作家，画笔和画家之间的关系，重要的不是实现想法的手段，重要的是心，一个充满了想法的心灵才是最宝贵的。作家什么都不想写，文字对他有什么用呢，画家什么都不想画，画笔又有什么用呢，这样才能准确的理解编程的作用，如果没有一个改变世界的想法，google搜索和苹果手机也都不会出现了，拉里佩奇或乔布斯代码写的多好都没用。由此可见，互联网行业大部分的行业都是为了想法在服务，不管是产品，运营，UI，都是为了让想法变成现实，什么时候自己能成为不再为别人的想法服务的人，而是提出想法呢？有点跑题了。
 
-android/iOS/flutter 三种技术写同一种APP本意是为了熟悉一下近来学习的android和iOS，flutter算是添头，写一下玩一玩。不过通过这次项目的编写，让我觉得其实很多的技术都是在做类似的事情，变化的只不过是API。用RN，用FLutter，用Android，用IOS都可以写出APP来，成为大前端，也就是掌握多种可以做同一个事情的技术，会一种和会多种只不过是谁记住了更多的API。
+android/iOS/flutter 三种技术写同一种APP本意是为了熟悉一下近来学习的android和iOS，flutter算是添头，写一下玩一玩。不过通过这次项目的编写，让我觉得其实很多的技术都是在做类似的事情，变化的只不过是API。用Icon，用RN，用FLutter，用Android，用IOS都可以写出APP来，成为大前端，也就是掌握多种可以做同一个事情的技术，会一种和会多种只不过是谁记住了更多的API。
 
 最近在做一个移动端即时通讯的需求，读了一些技术博客，这些博客不是为了Flutter而写，他讲述的是客户端和服务器端整个的处理即时通讯的流程，客户端开启连接，心跳检测，创建本地数据库，服务端接收到消息再转发到客户端，等等。这让我觉得在业务开发上重要的其实不是语言或者技术，而是这种整体的，解决问题的思路，思路才是灵魂，语言和框架只不过是实现这种思路的工具。
 
@@ -137,3 +137,6 @@ android/iOS/flutter 三种技术写同一种APP本意是为了熟悉一下近来
 
 “我支持你，加油！”
 
+![](https://img-blog.csdnimg.cn/c66cc07b674c424ba11ec6825e22a640.png)
+
+![](https://img-blog.csdnimg.cn/46f9ed15f914479ab130d47e9578e721.png)
